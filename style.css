@@ -8,7 +8,7 @@ body {
 /* Estilo del encabezado */
 .header {
     background-color: bisque;
-    color: aquamarine;
+    color: rgb(9, 93, 65);
     padding: 15px;
     text-align: center;
 }
