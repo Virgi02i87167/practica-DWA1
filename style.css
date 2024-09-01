@@ -1,0 +1,76 @@
+/* Estilo básico del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+.header {
+    background-color: bisque;
+    color: aquamarine;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Contenedor de la fila */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.col-3, .col-6, .col-12 {
+    padding: 15px;
+}
+
+.col-3.menu {
+    flex: 25%;
+    background-color: powderblue;
+}
+
+.col-6 {
+    flex: 50%;
+    background-color: darksalmon;
+}
+
+.col-3.right-column {
+    flex: 25%;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.right-image {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: brown;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .col-3, .col-6 {
+        flex: 100%;
+    }
+
+    .right-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
